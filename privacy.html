@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Homelab Automation</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    color: #1a1a1a;
+    background: #fdfdfc;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e6; background: #161614; }
+    a { color: #8ab4f8; }
+    footer { border-color: #3a3a36; color: #9a9a95; }
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  .sub { color: #6a6a65; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2.25rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4rem; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e2e2dd;
+    font-size: 0.9rem;
+    color: #6a6a65;
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Homelab Automation — last updated 13 September 2026</p>
+
+<h2>Summary</h2>
+<p>
+  This application is a personal, self-hosted automation project with a single user: its owner,
+  Oscar Thiellier. It accesses only that owner's own Google account. No other person's data is
+  processed, and there is no way for anyone else to sign up or connect an account.
+</p>
+
+<h2>What data is accessed</h2>
+<ul>
+  <li><strong>Gmail messages</strong> — read in order to prepare draft replies. Drafts are
+      created in the owner's own mailbox and are only sent after the owner explicitly approves
+      them.</li>
+  <li><strong>Google Calendar events</strong> — read to check availability and detect
+      conflicts; created, updated or moved only at the owner's request.</li>
+</ul>
+
+<h2>How the data is used</h2>
+<p>
+  Solely to perform the action the owner asked for: drafting a reply, answering a question
+  about the day's schedule, or adding an appointment. The data is not used for training,
+  profiling, advertising, or analytics of any kind.
+</p>
+
+<h2>Where the data is processed and stored</h2>
+<p>
+  On hardware in the owner's home. The application runs on a self-hosted server; speech
+  recognition and language models run on local machines on the same network. Message and event
+  contents are held in memory for the duration of a request and in the automation server's own
+  execution history, which is pruned automatically after seven days.
+</p>
+<p>
+  No Google user data is copied to any third-party service, cloud provider, or analytics
+  platform.
+</p>
+
+<h2>Sharing</h2>
+<p>
+  None. Data is never sold, rented, shared, or transferred to anyone. There are no third-party
+  processors, no advertising partners, and no subprocessors.
+</p>
+
+<h2>Retention and deletion</h2>
+<p>
+  Automation run history is pruned automatically after seven days. Google account access can be
+  revoked at any time by the owner at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  which immediately and permanently ends the application's access.
+</p>
+
+<h2>Security</h2>
+<p>
+  Credentials are held encrypted by the automation server and in a self-hosted password manager.
+  Remote access to the environment is by VPN only. The application is not exposed to the public
+  internet beyond the single callback address required to complete Google's sign-in flow.
+</p>
+
+<h2>Limited Use disclosure</h2>
+<p>
+  This application's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the Limited Use requirements.
+</p>
+
+<h2>Changes</h2>
+<p>
+  Any change to this policy will be published on this page with an updated date.
+</p>
+
+<h2>Contact</h2>
+<p>
+  <a href="mailto:othiellier@gmail.com">othiellier@gmail.com</a>
+</p>
+
+<footer>
+  <a href="index.html">← Back to homepage</a>
+</footer>
+
+</body>
+</html>

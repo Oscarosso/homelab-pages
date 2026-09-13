@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homelab Automation — Oscar Thiellier</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    color: #1a1a1a;
+    background: #fdfdfc;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e6; background: #161614; }
+    a { color: #8ab4f8; }
+    code { background: #26262300; border-color: #3a3a36; }
+    footer { border-color: #3a3a36; color: #9a9a95; }
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  .sub { color: #6a6a65; margin-top: 0; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4rem; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    padding: 0.1rem 0.3rem;
+    border: 1px solid #e2e2dd;
+    border-radius: 3px;
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e2e2dd;
+    font-size: 0.9rem;
+    color: #6a6a65;
+  }
+</style>
+</head>
+<body>
+
+<h1>Homelab Automation</h1>
+<p class="sub">A personal, self-hosted automation project run by Oscar Thiellier.</p>
+
+<h2>What this is</h2>
+<p>
+  A private home lab used to learn systems and security engineering. It runs a hypervisor, a
+  handful of virtual machines, a SIEM, a monitoring stack, and a workflow automation server.
+  Everything is hosted on hardware in my home. There is no product, no service, and no
+  customers — this page exists because Google requires a homepage URL for applications that
+  use its APIs.
+</p>
+
+<h2>What the application does</h2>
+<p>
+  A self-hosted <a href="https://n8n.io">n8n</a> instance uses Google APIs on my own account,
+  for my own use:
+</p>
+<ul>
+  <li><strong>Gmail</strong> — reads my incoming mail to prepare draft replies, which I review
+      and send myself. Drafts are never sent without my explicit approval.</li>
+  <li><strong>Google Calendar</strong> — reads my calendar to check for conflicts, and creates
+      or moves my own events when I ask it to, by message or by voice.</li>
+</ul>
+<p>
+  The application has exactly one user: me. It is not offered to anyone else and has no
+  sign-up.
+</p>
+
+<h2>Where the data goes</h2>
+<p>
+  Nowhere. Requests originate from a server in my home and the responses stay there. Speech
+  recognition, language models and log analysis all run on local hardware rather than on
+  third-party services. Nothing is shared, sold, or sent onward.
+</p>
+<p>See the <a href="privacy.html">privacy policy</a> for the full statement.</p>
+
+<h2>Contact</h2>
+<p>
+  <a href="mailto:othiellier@gmail.com">othiellier@gmail.com</a>
+</p>
+
+<footer>
+  Last updated 13 September 2026.
+</footer>
+
+</body>
+</html>
